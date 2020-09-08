@@ -37,46 +37,53 @@ const answer = [
     {ans7: 'Do whatever you feel happy about!'},
     {ans8: 'Don\'t worry be happy :\)'}
 ]
+// getting an array of answer strings
 let answerList = answer.map(obj => Object.values(obj));
-
+// initialize output
 let output = 0;
-let revealedAns = Math.floor(Math.random() * 8);
-
-switch (revealedAns) {
-    case 0:
-        output = answerList[0];
-        break;
-    case 1:
-        output = answerList[1];
-        break;
-    case 2:
-        output = answerList[2];
-        break;
-    case 3:
-        output = answerList[3];
-        break;
-    case 4:
-        output = answerList[4];
-        break;
-    case 5:
-        output = answerList[5];
-        break;
-    case 6:
-        output = answerList[6];
-        break;
-    default:
-        output = answerList[7];
-        break;
-    
+// creating a function to get a random answer by using a random number as an index of the array
+// revealedAns (i.e. the random number)
+function randomAns(revealedAns) {
+    switch (revealedAns) {
+        case 0:
+            output = answerList[0];
+            break;
+        case 1:
+            output = answerList[1];
+            break;
+        case 2:
+            output = answerList[2];
+            break;
+        case 3:
+            output = answerList[3];
+            break;
+        case 4:
+            output = answerList[4];
+            break;
+        case 5:
+            output = answerList[5];
+            break;
+        case 6:
+            output = answerList[6];
+            break;
+        default:
+            output = answerList[7];
+            break;
+    }
 }
+
 // showing the answers in the div and changing the bg-color of the div
 document.getElementById('ask').onclick = function change() {
+    // obtain the random number every time the button is clicked so the answer can be altered every time 
+    let revealedAns = Math.floor(Math.random() * 8);
+    // run the function to get the output
+    randomAns(revealedAns);
     document.getElementById('answer-box').innerText = output;
     document.getElementById('answer-box').style.backgroundColor = '#91F9E5';
 }
-// refresh button
-function refreshPage() {
-    window.location.reload();
+// 'refresh' button
+document.getElementById('button-refresh').onclick = function refresh() {
+    document.getElementById('answer-box').style.backgroundColor = '#000';
 }
 
 // Contact Me

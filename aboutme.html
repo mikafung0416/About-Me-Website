@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/a82fe9e8c1.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/stylesheet/aboutme.css">
+        <title>Mika Fung</title>
+    </head>
+    <body>
+
+<!--navbar from bootstrap-->
+    <div class="nav-container">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#home"><i class="fas fa-home"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto smooth-scroll">
+            <li class="nav-item">
+              <a class="nav-link anchor" href="#about-me">About Me<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#motto">My Motto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-mika">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div> 
+
+<!--cover photo-->
+      <div class="container-photo" id="home">
+        <img src="./assets/images/cover-2.JPG" alt="coverphoto" id="cover-photo">
+        <div class="text-box">
+          <div class="text-on-photo">
+            <h3>Mika Fung</h3>
+            <p>Programming Beginner | Looking For A Career Change</p>
+          </div>
+        </div>
+      </div>
+
+<!--About Me-->
+      <!-- before bootcamp -->
+      <div class="before" id="about-me">
+        <div class="container-before">
+          <div class="row row-before">
+            <div class="col col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
+              <img src="./assets/images/para-title-2.png" alt="title-bg" class="title-photo">
+              <p class="title wow animate__animated animate__bounce">Before Bootcamp</p>
+            </div>
+            <div class="col col-sm-12 col-md-6 d-flex align-items-center">
+              <div class="para">
+                <p>Studied hospitality for 4 years and worked in hotel for 2 years. Have always thought I was gonna be a hotelier for the rest of my life until I learnt about coding stuff. Due to Covid (damn!), I had more time to study about programming and found myself really interested in solving problems and type type type on the computer! So I decided to take this bootcamp to equip myself pursuing a new career path - to become a software engineer!</p>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      <!-- after bootcamp -->
+      <div class="before">
+        <div class="container-before">
+          <div class="row row-before row-after">
+            <div class="col col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
+              <div class="para para-after">
+                <p>Upon the end of the bootcamp, I hope I can think and solve problems like a programmer. Hopefully, after gaining knowledge of front- and back-end development, I would get a job as a software engineer. I also look forward to meeting peers who are also passionate about programming and industry experts whom I can connect with!</p>
+              </div>
+            </div>
+            <div class="col col-sm-12 col-md-6 d-flex align-items-center">
+              <img src="./assets/images/para-title-2.png" alt="title-bg" class="title-photo-after">
+              <p class="title-after wow animate__animated animate__bounce">After Bootcamp</p>
+            </div>
+          </div> 
+        </div>
+      </div>      
+
+<!--Gallery-->
+      <div class="gallery" id="gallery">
+        <div class="gallery-container">
+          <div class="row row-photo">
+            <div class="col col-sm-12 col-md-6 col-lg-3 photo-col">
+              <img src="./assets/images/poland.jpg" alt="Poland" class="photo">
+              <div class="colour-box"></div>
+              <div class="word" id="word-1"><p>Volunteering in Poland</p></div>
+            </div>  
+            <div class="col col-sm-12 col-md-6 col-lg-3 photo-col">
+              <img src="./assets/images/thai.PNG" alt="Thailand" class="photo">
+              <div class="colour-box"></div>
+              <div class="word" id="word-2"><p>Travelling in Thailand</p></div>
+            </div>
+            <div class="col col-sm-12 col-md-6 col-lg-3 photo-col">
+              <img src="./assets/images/prague.PNG" alt="Prague" class="photo">
+              <div class="colour-box"></div>
+              <div class="word" id="word-3"><p>Playing snow in Prague</p></div>
+            </div>  
+            <div class="col col-sm-12 col-md-6 col-lg-3 photo-col">
+              <img src="./assets/images/disney.PNG" alt="US Disney World" class="photo">
+              <div class="colour-box"></div>
+              <div class="word" id="word-4"><p>Interning in US Disney</p></div>
+            </div>  
+          </div>
+        </div>
+      </div>
+        
+<!--My Motto-->
+    <div class="motto" id="motto">
+      <div class="motto-container">
+          <div class="motto-word">
+            <h1 class="wow animate__animated animate__flash">Talk to me about anything! Ask me questions!</h1>
+            <h3>See if my mottos help you!</h3>
+          </div>
+          <div class="input d-flex justify-content-center">
+            <input type="text" class="form-control col-sm-8" id="input-box" placeholder="e.g. should I code or netflix now?">
+            <button type="button" class="btn" id="ask">Ask!</button>
+          </div>
+          <div class="answer d-flex flex-column align-items-center">
+            <div id="answer-box" class="rounded d-flex align-items-center justify-content-center"></div>
+            <div class="refresh-box">
+              <button type="button" class="btn" id="button-refresh" onclick="refreshPage()">Refresh!</button>
+            </div>
+          </div>
+      </div>
+    </div>
+
+<!--Contact Me-->
+    <div class="contact-me d-flex justify-content-center align-items-center" id="contact-mika">
+      <div class="contact-me-container">
+        <div class="row">
+          <div class="col d-flex justify-content-center align-items-center">
+            <a href="http://www.linkedin.com/in/mika-fung" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <a href="https://github.com/mikafung0416" target="_blank"><i class="fab fa-github icon"></i></a>
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <a href="https://www.facebook.com/mikafung0416/" target="_blank"><i class="fab fa-facebook-f icon"></i></a>
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <a href="https://www.instagram.com/mikafcmika/?hl=en" target="_blank"><i class="fab fa-instagram-square icon"></i></a>
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <a href="mailto:fungcheukman@hotmail.com"><i class="far fa-envelope icon"></i></a>
+          </div>
+      </div>
+      </div>
+    </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="./assets/script/wow.js"></script>
+        <script>
+          new WOW().init();
+        </script>
+        <script src="./assets/script/aboutme.js"></script>
+      </body>
+</html>

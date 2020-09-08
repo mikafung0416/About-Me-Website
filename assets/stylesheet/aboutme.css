@@ -1,0 +1,292 @@
+html {
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/*navbar from bootstrap*/
+.fas {
+    font-size: 1.5em;
+}
+.nav-container {
+    width: 100%;
+}
+.navbar {
+    background-color: #F2EDEB;
+    font-size: 1.3vw;
+}
+.nav-link, .navbar-brand {
+    color: #023436;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/*cover photo*/
+#cover-photo {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    position: relative;
+}
+.text-box {
+    position: absolute;
+    max-width: 100%;
+    top: 35%;
+    left: 18%;
+    text-align: center;
+    transition: .3s;
+    opacity: 0;
+}
+.text-on-photo h3 {
+    font-size: 6vw;
+}
+.text-on-photo p {
+    font-size: 3vw;
+}
+.container-photo:hover #cover-photo {
+    opacity: 0.3;
+}
+.container-photo:hover .text-box {
+    opacity: 1;
+}
+.container-photo {
+    position: relative;
+    margin-top: 4vw;
+    width: 100%;
+    scroll-margin-top: 5em;
+}
+
+
+/*About Me Before*/
+.before .container-before .row-before {
+    width: 100%;
+}
+.before {
+    scroll-margin-top: 3.5em;
+}
+.para {
+    width: 30vw;
+    font-size: 1.5em;
+    text-align: justify;
+    margin-left: 3vw;
+}
+.title {
+    z-index: 1;
+    position: absolute;
+    margin-left: 9vw;
+    font-size: 3em;
+}
+.title-photo {
+    position: relative;
+    margin-left: 6vw;
+}
+/*About Me After*/
+.para-after {
+    margin-left: 12vw;
+}
+.title-after {
+    z-index: 1;
+    position: absolute;
+    margin-left: 8vw;
+    font-size: 3em;
+}
+
+/*Gallery*/
+.gallery .gallery-container .row-photo {
+    width: 100%;
+}
+.gallery {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    scroll-margin-top: 8em;
+}
+.row-photo {
+    padding-left: 2.5vw;
+}
+.word {
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    display: none;
+    font-size: 1.5em;
+}
+.colour-box {
+    height: 300px;
+    width: 300px;
+    background-color: #CD7AAA;
+    position: relative;
+}
+.photo {
+    position: absolute;
+    z-index: 1;
+    left: 8%;
+    bottom: 5%;
+}
+
+/*My Motto*/
+.motto {
+    width: 100%;
+}
+.motto-container {
+    /* background-color: #51A3A3; */
+    padding: 2% 0 2%;
+    background-image: url("https://media1.tenor.com/images/6bc6db5ce835af0cc36a497d71be81ab/tenor.gif?itemid=7892524");
+    background-position: center;
+    background-size: cover;
+}
+.motto-word {
+    text-align: center;
+}
+.input {
+    margin-top: 2%;
+}
+#answer-box {
+    width: 60vw;
+    height: 20vh;
+    background-color: #000;
+    margin: 2% 0 2%;
+    text-align: center;
+    font-size: 5vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#ask {
+    background-color: #DDA6C6;
+}
+#button-refresh {
+    background-color: #CD7AAA;
+}
+
+/*Contact Me*/
+.contact-me {
+    width: 100%;
+    height: 10vh;
+    background-color: #F2E1DA;
+}
+.contact-me-container {
+    width: 40%;
+}
+.icon {
+    font-size: 3.5em;
+    color: #1A262B;
+}
+
+
+/*iPhone*/
+@media only screen and (max-width: 768px) {
+   .nav-link {
+       font-size: 3vw;
+   }
+   .container-photo {
+        margin-top: 16vw;
+   }
+   /*About Me Before*/
+   .title-photo {
+        width: 80vw;
+        margin-left: 0;
+    }
+    .title {
+        font-size: 2em;
+    }
+    .para {
+        width: 100%;
+        font-size: 1em;
+        padding-left: 7vw;
+    }
+    /*About Me After*/
+    .title-photo-after {
+        width: 80vw;
+    }
+    .row-after {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .para-after {
+        margin-left: 0;
+    }
+    .title-after {
+        margin-left: 22vw;
+        font-size: 2em;
+    }
+    .title-photo-after {
+        margin-left: 6vw;
+    }
+    /* Gallery */
+    .gallery {
+        scroll-margin-top: 4em;
+    }
+    .colour-box {
+        display: none;
+    }
+    .photo {
+        position: unset;
+    }
+    .word {
+        position: unset;
+        display: block;
+    }
+    .photo-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px 0 10px;
+    }
+    .row-photo {
+        margin: 0 0 0;
+    }
+    /*Motto*/
+    .motto-word h1 {
+        font-size: 5vh;
+    }
+    /* Contact Me */
+    .icon {
+        font-size: 2em;
+    }
+    .contact-me-container {
+        width: 80%;
+    }
+
+}
+
+/*iPad*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container-photo {
+        margin-top: 8vw;
+    }
+    /*About Me Before*/
+    .title-photo {
+        height: 300px;
+        width: auto;
+    }
+    .title {
+        margin-left: 4vw;
+    }
+    .para {
+        width: 300.25px;
+    }
+    .before {
+        margin-top: 30px;
+        scroll-margin-top: 5em;
+    }
+    /*About Me After*/
+    .row-after {
+        display: flex;
+        flex-direction: row;
+    }
+    .title-photo-after {
+        margin-left: 0;
+        
+        height: 290px;
+        width: auto;
+    }
+    .title-after {
+        margin-left: 13vw;
+    }
+    /* Contact Me */
+    .contact-me-container {
+        width: 60%;
+    }
+    .icon {
+        font-size: 3em;
+    }
+}

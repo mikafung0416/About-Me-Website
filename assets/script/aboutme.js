@@ -84,6 +84,7 @@ document.getElementById('ask').onclick = function change() {
 // 'refresh' button
 document.getElementById('button-refresh').onclick = function refresh() {
     document.getElementById('answer-box').style.backgroundColor = '#000';
+    document.getElementById('answer-box').innerText = '';
 }
 
 // Contact Me
